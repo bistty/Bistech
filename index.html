@@ -14,13 +14,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Bistech</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+    <!-- beginning of nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Bistech</a>
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="">Foodie</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,43 +40,173 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#learn"
-                >What you'll learn</a
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#questions">Questions</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#instructors">Instructors</a>
+              <a class="nav-link" href="#questions">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructors">Testimonials</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section
-      class="bg-dark text-light text-center text-sm-start p-5 p-lg-0 pt-lg-3"
+    <main>
+       <!-----------------------hero section------>
+       
+      <section id="home"
+      class="hero text-center text-sm-start p-2 p-lg-0 pt-lg-3"
     >
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="hero-text">
           <div>
-            <h1>Become a <span class="text-warning">Web Developer</span></h1>
-            <p class="lead my-4">
-              We focus on teaching students the fundamentals of the latest and
-              the greatest technologies to make them one of the best web
-              developers in the world.
-            </p>
-            <button class="btn btn-primary btn-lg">Start Enrollment</button>
+            <h1>The ultimate <br> cuisine tailored<br> to your <span class="highlight">taste.</span></h1>
+            <div class="d-flex sub-images">
+              <img src="images/app.png" alt="" class="google-image">
+              <img src="images/google.png" alt="" class="apple-image">
+            </div>
           </div>
 
-          <img
-            class="img-fluid w-50 d-none d-sm-block ms-sm-5"
-            src="./images/programmer2.svg"
-            alt=""
-          />
+          
         </div>
       </div>
-    </section>
+      </section>
+       <!-----------------------menu section------>
+       <section id="menu" class="p-2 menu">
+        <div class="container">
+          <h2 class="text-center text-dark">Explore Our Menu</h2>
+          
+          <div class="row g-4">
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/spag1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/food-photographer-jennifer-pallian-gw78G_i7GYo-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/pablo-merchan-montes-0nT08Z-MhiE-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/spag2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/piotr-miazga-WBX-ZLr8P7I-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/prudence-earl-NM1eTOwEz7A-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img src="images/food.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">#1500</h5>
+                  <p class="card-subtitle">Spanish spag</p>
+                  <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------------------contact section------>
+      <section class="p-2" id="contact">
+        <div class="container">
+          <div class="row justify-content-between align-items-center contact">
+            <div class="col-md contact-body">
+              <div class="img-container">
+                <img class="img-fluid" src="./images/contact-image.jpg" alt="" />
+              </div>
+              <div class="contact-container">
+                <h4>Come and visit us</h4>
+                <p><span class="icon"><i class="bi bi-telephone"></i></span>+234 9038492812</p>
+                <p><span class="icon"><i class="bi bi-envelope"></i></span>Foodierestaurant@gmail.com</p>
+                <p><span class="icon"><i class="bi bi-geo-alt"></i></span>837 W. Matthew Avenue, Lagos State, Nigeria</p>
+              </div>
+            </div>
+            <div class="col-md p-5 about">
+              <h2>We Bring nutritious<br> meals to your<br> family</h2>
+              <p class="text1">
+                Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.
+              </p>
+              <p class="text2">
+                At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.
+              </p>
+              <a href="#" class="btn  mt-3"
+                > More About Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    
     <section class="bg-primary text-light p-5">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-centers">
@@ -132,31 +267,7 @@
         </div>
       </div>
     </section>
-    <section class="p-5" id="learn">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-md">
-            <img class="img-fluid" src="./images/learning.svg" alt="" />
-          </div>
-          <div class="col-md p-5">
-            <h2>Learn The fundamentals</h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              unde labore sit quisquam quo voluptatibus ipsam quas assumenda.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-              dignissimos maiores dolores repellat illo placeat eligendi
-              reprehenderit quisquam rerum voluptate iusto eius eum saepe, totam
-              odit consequuntur! Molestias, itaque obcaecati!
-            </p>
-            <a href="#" class="btn btn-dark mt-3"
-              ><i class="bi bi-chevron-right text-primary"></i> Read More</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="p-5 bg-dark text-light" id="learn">
       <div class="container">
         <div class="row justify-content-between align-items-center">
@@ -347,97 +458,7 @@
         </div>
       </div>
     </section>
-    <section id="instructors" class="bg-primary p-5">
-      <div class="container">
-        <h2 class="text-center text-white">Instructors</h2>
-        <p class="lead text-center text-white mb-5">
-          Our Instructors all have more than 6 years working as a developer in
-          the industry
-        </p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card">
-              <div class="card-body text-center">
-                <img
-                  class="rounded-circle mb-3 mt-1"
-                  src="https://randomuser.me/api/portraits/men/7.jpg"
-                  alt=""
-                />
-                <h3 class="card-title">Jacob Adams</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  praesentium quaerat sit libero sequi ex!
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card">
-              <div class="card-body text-center">
-                <img
-                  class="rounded-circle mb-3 mt-1"
-                  src="https://randomuser.me/api/portraits/women/7.jpg"
-                  alt=""
-                />
-                <h3 class="card-title">Sarah Adams</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  praesentium quaerat sit libero sequi ex!
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card">
-              <div class="card-body text-center">
-                <img
-                  class="rounded-circle mb-3 mt-1"
-                  src="https://randomuser.me/api/portraits/men/13.jpg"
-                  alt=""
-                />
-                <h3 class="card-title">Mike Doe</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  praesentium quaerat sit libero sequi ex!
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card">
-              <div class="card-body text-center">
-                <img
-                  class="rounded-circle mb-3 mt-1"
-                  src="https://randomuser.me/api/portraits/women/15.jpg"
-                  alt=""
-                />
-                <h3 class="card-title">Joy Woodlum</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  praesentium quaerat sit libero sequi ex!
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="p-5">
       <div class="row">
         <div class="container">
@@ -552,6 +573,10 @@
       </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -562,5 +587,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="/main.js"></script>
   </body>
 </html>

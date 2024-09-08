@@ -3,6 +3,166 @@ body::before {
   content: '';
   height: 60px;
 }
+/* navbar */
+.navbar-brand{
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #F27522 !important;
+}
+.navbar-brand img{
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navbar-nav{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.nav-item{
+  margin-bottom: 10px;
+  color: #fff;
+}
+.active, .nav-link:hover{
+  background-color: #F27522;
+  padding: 4px 16px 4px 16px;
+  color: #fff !important;
+  display: inline-block;
+  border-radius: 34px;
+  width: 40%;
+  text-align: center;
+}
+/*-------hero section------*/
+.hero {
+  background: linear-gradient(to left bottom,#ffffff, #03081F30,#F27522),
+    url("../images/food.png") center/cover no-repeat;
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100vw;
+  top: 0;
+}
+.hero-text{
+  margin-top: 5rem;
+  text-align: left;
+}
+.hero-text h1{
+  font-size: 2.625rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: #fff;
+  line-height: 1;
+}
+.hero-text .highlight{
+  color: #00F357;
+}
+img.apple-image{
+  width: 77px;
+  height: 29px;
+  margin-top: 1.6rem;
+}
+img.google-image{
+  width: 77px;
+  height: 77px;
+  
+}
+/*---------------end of hero section--------------------*/
+/* menu section */
+.menu{
+  background-color: #fff;
+  font-family: poppins;
+}
+.menu h2{
+  font-size: 1.5rem;
+  font-family: poppins;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.card img{
+  height: 8rem;
+  object-fit: cover;
+}
+.card-body{
+  text-align: center;
+}
+.card-title{
+  color: #F27522;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.card-subtitle{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-text{
+  font-size: 0.625rem;
+}
+/* contact section */
+#contact{
+  margin-top: 30px;
+  font-family: poppins;
+}
+.contact .img-fluid{
+  border-radius: 12px;
+  width: 60%;
+  height: 30%;
+  position: relative;
+}
+.contact-body{
+  position: relative;
+
+}
+.contact-container{
+  width: 70%;
+  border-radius: 12px;
+  background-color: #F27522;
+  color: #fff;
+  position: absolute;
+  bottom: -10%;
+  right:5%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.contact-container h4{
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.contact-container p{
+  font-size: 0.4375rem;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.about h2{
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.about .text1{
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.about .text2{
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.about .btn{
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 20px 32px;
+  border: 1px solid #045B23;
+}
+.icon{
+  padding-right: 15px;
+}
 .mapouter {
   position: relative;
   text-align: right;
@@ -12,7 +172,107 @@ body::before {
   border-radius: 10px;
 }
 @media (min-width: 768px) {
-  .news-letter-input {
-    width: 50%;
+  .navbar-brand{
+    font-size: 2.25rem;
+  }
+  .navbar-brand img{
+    width: 67px;
+    height: 50px;
+  }
+  
+  .nav-link,.nav-link:hover{
+    width: 100%;
+    margin-right: 30px;
+  }
+  /* hero section */
+  .hero{
+    height: 100vh;
+  }
+  .hero-text{
+    margin-top: 10rem;
+  }
+  .hero-text h1{
+    font-size: 86px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #fff;
+    line-height: 0.9;
+  }
+  img.apple-image{
+    width: 224px;
+    height: 83.71px;
+    margin-top: 4.2rem;
+  }
+  img.google-image{
+    width: 224px;
+    height: 224px;
+  }
+  /* menu section */
+  .menu h2{
+    font-size: 55px;
+    
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .card-body{
+    text-align: center;
+  }
+  .card-title{
+    font-size: 24px;
+  }
+  .card-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .card-text{
+    font-size: 16px;
+  }
+  .card img{
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  /* contact section */
+  .contact .img-fluid{
+    
+    width: 60%;
+    height: 30%;
+   
+  }
+  .contact-container{
+    width: 60%;
+    
+    right: 17%;
+   
+  }
+  .img-container{
+    height: 20%;
+    overflow: hidden;
+  }
+  .contact-container h4{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  .contact-container p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+  }
+  .about h2{
+    font-size: 55px;
+    font-weight: 900;
+    font-family: sans-serif;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .about .text1{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .about .text2{
+    font-weight: 400;
+    font-size: 16px;
   }
 }
