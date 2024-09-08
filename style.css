@@ -163,6 +163,30 @@ img.google-image{
 .icon{
   padding-right: 15px;
 }
+/* news letter section */
+.news-letter{
+  height: 165px;
+  background-color: #F27522;
+  font-family: poppins;
+}
+.news-letter img{
+  height: 250px;
+  width: 350px;
+  margin-top: -5rem;
+}
+.news-letter-input{
+  width: 80%;
+  height: 10%;
+}
+.sub{
+  background-color: #F27522;
+}
+footer{
+  background-color: #F27522;
+  width: 90%;
+  color: #fff;
+  margin: auto;
+}
 .mapouter {
   position: relative;
   text-align: right;
